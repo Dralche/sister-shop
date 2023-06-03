@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///C:/Users/maomaode/Desktop/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+    .title {
+        font-size: 24px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .box-container {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+    }
+    
+    .box {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        background-color: pink;
+        margin-top: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    .pink-bg {
+        background-color: pink;
+    }
+</style>
+<script>
+    function openNewTab(content) {
+        var newTab = window.open('', '_blank');
+        newTab.document.body.style.backgroundColor = "pink";
+        newTab.document.write("<h1>" + content + "</h1>");
+        newTab.document.close();
+    }
+</script>
+</head>
+<body>
+    <div class="title">妹妹的小商店</div>
+    <div class="box-container">
+        <div class="box" onclick="openNewTab(&#39;牛角包&#39;)">牛角包</div>
+        <div class="box" onclick="openNewTab(&#39;冰淇淋&#39;)">冰淇淋</div>
+        <div class="box" onclick="openNewTab(&#39;甜甜圈&#39;)">甜甜圈</div>
+        <div class="box" onclick="openNewTab(&#39;蛋挞&#39;)">蛋挞</div>
+    </div>
+
+
+</body></html>
